@@ -11,27 +11,27 @@ ts.setup {
     disable = {},
   },
   ensure_installed = {
-    "tsx",
-    "fish",
-    "json",
-    "yaml",
-    "css",
-    "html",
-    "lua",
     "markdown",
     "markdown_inline",
-    "python",
-    "graphql",
-    "regex",
+    "tsx",
     "typescript",
-    "javascript",
+    "toml",
+    "fish",
+    "php",
+    "json",
+    "yaml",
+    "swift",
+    "css",
+    "html",
+    "lua"
   },
-  --- Automatically install missing parsers when entering buffer
-  auto_install = true,
-
   autotag = {
     enable = true,
   },
+  context_commentstring = {
+    enable         = true,
+    enable_autocmd = false,
+  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
